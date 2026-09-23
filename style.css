@@ -79,4 +79,45 @@ display: block;
     padding: 10px 24px;
     text-align:center;
     width: fit-content;
+    min-width: 250px;
+    align-self: flex-start;
+}
+.badge-smasher-guy span{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.card-info{
+    background-color: #FFA652;
+    border: 3.5px solid #000000;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.info-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 700;
+}
+.info-label{
+    white-space: nowrap;
+}
+.arrow-line{
+    flex: 1;
+    overflow: hidden;
+    margin: 0 12px;
+    font-family: sans-serif;
+    letter-spacing: -2px;
+    font-weight: 700;
+    user-select: none;
+}
+.info-value{
+    white-space: nowrap;
+}
+.right-column{
+    position: relative;
+    width: 100%;
 }
