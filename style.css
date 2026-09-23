@@ -121,3 +121,144 @@ display: block;
     position: relative;
     width: 100%;
 }
+.floating-photo
+{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border: 2.5px solid #000000;
+    background-color: #FFFFFF;
+    padding: 4px;
+    z-index: 10;
+    transition: transform 0.2s ease;
+}
+.floating-photo:hover
+{
+    transform: scale(1.15) rotate (0deg) !important;
+    z-index: 30;
+}
+.floating-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.pos-top-left{
+    top: -24px;
+    left: -28px;
+    transform: rotate(-20deg);
+}
+.pos-mid-left
+{
+    top: 36%;
+    left: - 32px;
+    transform: rotate(-15deg);
+}
+.pos-top-right
+{
+    top: -20px;
+    right: -24px;
+    transform: rotate(22deg);
+}
+.pos-mid-right 
+{
+    top: 42%;
+    right: -28px;
+    transform: rotate(-12deg);
+}
+.card-projects
+{
+    background-color: #82b1ff;
+    border: 3.5px solid #000000;
+    padding:32px 30px;
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+.project-title
+{
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 1.5px;
+    line-height: 1.25;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.project-text
+{
+    font-size: 19px;
+    line-height: 1.5px;
+    font-weight: 600;
+}
+.robot-image-box
+{
+    width: 100%;
+    max-width: 520px;
+    margin: 4px auto;
+    background-color: rgba(255,255,255,0.6);
+    border: 2.5px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.robot-image-box img{
+    width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    display: block;
+}
+.red-arrow-divider
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #e11d48;
+    font-weight: 700;
+    font-size: 22px;
+    user-select: none;
+    margin: 4px 0;
+}
+.arrow-line-fill
+{
+    flex: 1;
+    height: 2px;
+    background-color: #e11d48;
+    margin: 0 3px;
+}
+.ai-project-list
+{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-note{
+    text-align: center;
+    margin-top: 48px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+@media(max-width: 992px)
+{
+    .portfolio-grid{
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+    .left-column{
+        max-width: 480px;
+        margin: 0 auto;
+    }
+    .badge-smasher-guy{
+        align-self: center;
+    }
+    .floating-photo
+    {
+        display: none;
+    }
+}
